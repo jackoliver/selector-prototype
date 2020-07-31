@@ -1,0 +1,80 @@
+.App {
+  padding: 20px;
+}
+
+.site-layout-sub-header-background {
+  background: #fff;
+}
+
+.ant-layout-sider-dark {
+  background-color: white;
+  max-height: 100vh;
+  overflow: scroll;
+}
+
+.ant-typography {
+  font-size: 16px;
+}
+
+.small {
+  color: grey;
+  font-size: 14px;
+}
+
+.banner {
+  color: #636f81;
+}
+
+.active {
+  color: #3587e8;
+}
+
+.inactive:hover {
+  color: #3587e8;
+}
+
+/* .list-row .ant-switch {
+  display: none;
+}
+
+.list-row.showToggle .ant-switch,
+.list-row:hover .ant-switch {
+  display: inline-block;
+}
+
+.list-row.showToggle .amount,
+.list-row:hover .amount {
+  display: none;
+} */
+
+.active-filters {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+}
+
+.filter-item {
+  margin-left: 20px;
+}
+
+.amount {
+  text-align: right;
+  display: block;
+}
+
+.search-field {
+  position: sticky;
+  background: #fff;
+  top: 0;
+  z-index: 100;
+  padding: 10px 0;
+}
+
+.scroll-wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 38vh;
+
+  padding-right: 10px;
+}

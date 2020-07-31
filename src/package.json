@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "antd": "latest",
+    "classnames": "2.2.6",
+    "moment": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "keywords": [
+    "antd",
+    "ant",
+    "react"
+  ],
+  "name": "antd-template",
+  "description": "Ant design starter"
+}
