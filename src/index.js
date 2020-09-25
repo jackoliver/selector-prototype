@@ -60,7 +60,7 @@ const columns = [
     render: image => (
       <img
         alt=""
-        src={image}
+        src={image || "https://placehold.it/60x60"}
         style={{
           maxWidth: "60px",
           maxHeight: "60px",
@@ -163,7 +163,7 @@ const Prototype = () => {
   const categoryCount = buildCategories(filteredData);
   const brandCount = buildBrands(filteredData);
 
-  const RenderLitItems = ({ listItems, onSelect, context }) => {
+  const RenderListItems = ({ listItems, onSelect, context }) => {
     return Object.keys(listItems)
       .sort((a, b) => a.localeCompare(b))
       .map(name => {
@@ -235,7 +235,7 @@ const Prototype = () => {
           <h4>Categories</h4>
           <div className="scroll-wrapper">
             <div className="scroll-inner">
-              <RenderLitItems
+              <RenderListItems
                 listItems={categoriesList}
                 onSelect={toggleFilter}
                 context="categories"
@@ -246,7 +246,7 @@ const Prototype = () => {
           <h4>Brands</h4>
           <div className="scroll-wrapper">
             <div className="scroll-inner">
-              <RenderLitItems
+              <RenderListItems
                 listItems={brandsList}
                 onSelect={toggleBrandFilter}
                 context="brands"
